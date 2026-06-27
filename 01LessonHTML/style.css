@@ -1,0 +1,88 @@
+body {
+    /* 
+    background-color: aquamarine;
+    background-image: url("stockholm.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    background: antiquewhite url("stockholm.jpeg") cover center;*/
+   
+}
+
+/* this is syntax 
+tagName{
+    background-color: burlywood;
+    color: brown;
+}
+ */
+
+form {
+    background-color: #3c3ba187;
+    color: rgb(237, 231, 227);
+    border: 5px red solid;
+    margin-top: 10pt;
+    margin-right: 5%;
+    margin-left: 2em;
+    padding-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    outline: 5px blue dotted;
+}
+
+input {
+    background-color: hsl(150, 50%, 50%);
+    color: white;
+}
+
+#id1{
+    border-radius: 20px;
+    background-color: yellow;
+    color: red;
+    height: 30px;
+    width: 200px;
+
+    min-width: 150px;
+    min-height: 25px;
+
+    max-width: 250px;
+    max-height: 35px;
+}
+
+.class1{
+    font-size: 20px;
+    margin: 5px;
+}
+
+p{
+    background-color: antiquewhite;
+}
+
+.classp1{
+    text-align: right;
+}
+
+.classp2{
+    text-align: center;
+}
+
+.classp3{
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+}
+
+b{
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+}
+
+.classp4{
+   text-indent: 10px;
+   letter-spacing: 2px;
+   word-spacing: 10px;
+   line-height: 25px;
+}
