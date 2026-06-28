@@ -1,0 +1,134 @@
+div{
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+
+}
+
+.div1{
+    background-color: aqua;
+    position: relative;
+    top: 20px;
+    z-index: 4;
+}
+.div1:hover{
+    transition:  all 1s;
+    transition-timing-function: ea;
+    box-shadow: 10px 10px 10px blue;
+    text-shadow: 1px 1px 1px red;
+
+}
+
+.div1::first-line{
+    background-color: red;
+    color: white;
+}
+
+.div1::first-letter{
+    font-size: 30px;
+}
+
+.div1::before{
+    content: "";
+    background-color: yellow;
+    color: red;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.div1::after{
+    content: "";
+    background-color: yellow;
+    color: red;
+    padding: 10px;
+    display: block;
+    margin-top: 10px;
+}
+.div4:hover{
+    opacity: 0.5;
+}
+
+.div2{
+    background-color: blue;
+    color: white;
+    position: fixed;
+    top: 25px;
+    left: 30px;
+    right: 40px;
+    z-index: 5;
+
+}
+
+.div3{
+    background-color: brown;
+    color: white;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 50px;
+
+    transform: translate(-50%,-50%);
+}
+
+.div0{
+    background-color: violet;
+    height: 50px;
+    
+    position: sticky;
+    top: 0;
+    left: 20px;
+    z-index: 10;
+}
+
+.div5:hover{
+  background-color: yellow;
+  font-size: 20px;
+}
+
+a{
+    color: white;
+    padding: 20px;
+    background-image: linear-gradient(to left,red, blue, yellow);
+   
+}
+a:link{
+    background-color: green;
+}
+
+a:visited{
+    background-color: red;
+}
+
+a:hover{
+    background-color: yellow;
+}
+a:active{
+    background-color: blue;
+}
+
+
+a[target="_blank"] {
+    background-color: blue;
+}
+
+.mainContainer{
+    background-color: aqua;
+    display: flex;
+    direction: rtl;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .div7{
+        background-color: blue;
+        font-size: 30px;
+        width: 100px;
+        height: 50px;
+        color: white;
+    }
+}
