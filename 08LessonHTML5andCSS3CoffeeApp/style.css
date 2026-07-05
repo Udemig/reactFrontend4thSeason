@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    transition: .2s all;
+}
+
+:root {
+    --main-color: #d3ad7f;
+    --black-color: #13131a;
+    --bg-color: #010103;
+    --border: 1.5px solid rgba(255, 255, 255, 0.3)
+}
+
+body {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+section {
+    padding: 4rem 7%;
+}
+
+.btn:hover {
+    scale: 1.1;
+}
+
+header {
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 6%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+header .logo img {
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.icons {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    gap: .5rem;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: var(--border);
+}
+
+.home {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+    color: aliceblue;
+}
+
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    border: var(--border);
+    padding: 5rem;
+    text-align: center;
+    transition: all .4s;
+}
+
+.menu .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.menu .box-container .box:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .product-box {
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+
+.products .box-container .product-box .image {
+    padding: 2.5rem 0;
+}
+
+.products .box-container .product-box .image img {
+    height: 25rem;
+    width: 25rem;
+}
+
+.products .box-container .product-box .content h3 {
+    font-size: 2.5rem;
+}
+
+.products .box-container .product-box .content .stars {
+    padding: 1.5rem;
+}
+
+.products .box-container .product-box .content .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.products .box-container .product-box .content .price {
+    font-size: 2.5rem;
+}
+
+.products .box-container .product-box .content .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.reviews .box-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.reviews .box-container .review-box {
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.reviews .box-container .review-box img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.reviews .box-container .review-box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.reviews .box-container .review-box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.reviews .box-container .review-box .stars i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .map {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 45rem;
+    height: 70vh;
+}
+
+.contact form {
+    background-color: var(--black-color);
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 45rem;
+
+    border: var(--border);
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact form h1{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    border: var(--border);
+    align-items: center;
+    padding-left: 2rem;
+    gap: 2rem;
+}
+
+.contact form .input-box i{
+    font-size: 2rem;
+}
+
+.contact form .input-box input{
+    height: 100%;
+    flex: 1;
+    background-color: transparent;
+    color: white;
+    padding: 2rem 0;
+}
+
+.contact form .input-box input::placeholder{
+    color: white;
+}
+
+.contact .btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .btn-container .btn{
+    width: 200px;
+}
+
+.contact .btn-container .btn:hover{
+    scale: .95;
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    .icons {
+        display: flex;
+        font-size: 2rem;
+    }
+
+    header .navbar {
+        display: none;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home {
+        background-position: left;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home .content {
+        font-weight: 300;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+}
