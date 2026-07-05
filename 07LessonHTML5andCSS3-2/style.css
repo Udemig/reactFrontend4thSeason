@@ -1,0 +1,50 @@
+div{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    visibility: hidden;
+}
+
+.div1{
+    visibility: visible;
+    height: 100vh;
+    background: red url("https://unsplash.it/1499/1000");
+    position: relative;
+    /* background-blend-mode: multiply; */
+}
+
+.div1 p{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: 45px;
+    width: 80vw;
+    text-transform: uppercase;
+
+    text-align: center;
+    mix-blend-mode: exclusion;
+}
+
+.container{
+    background-color: aqua;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: 100px 25% 1fr;
+    gap: 20px;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+}
+
+.container3{
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(400px, 1fr);
+}
