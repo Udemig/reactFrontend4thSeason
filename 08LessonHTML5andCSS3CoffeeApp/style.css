@@ -164,7 +164,7 @@ header .logo img {
     line-height: 1.8;
 }
 
-.menu .box-container {
+.menu .box-container, .blogs .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -353,6 +353,49 @@ header .logo img {
 .contact .btn-container .btn:hover{
     scale: .95;
 }
+
+.blogs .box-container .blog-box{
+    border: var(--border);
+}
+
+.blogs .box-container .blog-box .image{
+    height: 15rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogs .box-container .blog-box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.blogs .box-container .blog-box .content{
+    padding: 1.2rem;
+    display: block;
+}
+
+
+.blogs .box-container .blog-box .content a{
+    color: white;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.blogs .box-container .blog-box .content span{
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.blogs .box-container .blog-box .content  p{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
 
 @media (max-width: 800px) {
     html {
