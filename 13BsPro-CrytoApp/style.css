@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #2c3e50;
+    --light-bg: #f8f9fa;
+    --white-color: #ffffff;
+}
+
+body{
+    color: var(--text-color);
+}
+
+header .navbar{
+    background-color: var(--primary-color) !important;
+    padding: 1rem 4rem;
+}
+
+header .navbar-brand{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header .navbar-brand i{
+    color: var(--secondary-color) !important;
+}
+
+header .nav-link{
+    color: #ccc;
+    padding: .5rem 1rem !important;
+}
+
+header .nav-link:active{
+    color: var(--white-color) !important;
+}
+
+header .nav-link:hover{
+    color: var(--secondary-color) !important;
+}
+
+header #menu-icon{
+    font-size: 20px;
+    padding: 10px;
+    color: #ccc;
+}
