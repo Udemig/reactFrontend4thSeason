@@ -1,0 +1,73 @@
+@import "contants";
+
+@mixin important-text($property) {
+    color: red;
+    font-size: $property;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+.button-basic{
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: blue;
+    }
+}
+
+body {
+    background-color: $myColor;
+}
+
+a {
+    font-size: $myFontSize;
+}
+
+
+header {
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+
+    nav {
+        background-color: bisque;
+        padding: 10px;
+        margin: 10px;
+
+        ul {
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style-type: none;
+
+            li {
+                @include important-text(25px);
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: red;
+                        color: white;
+                    }
+                    
+                }
+
+            }
+        }
+    }
+}
+
+button{
+    @extend .button-basic;
+    background-color: red;
+    color: white;
+    
+}

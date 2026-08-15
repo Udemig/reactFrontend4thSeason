@@ -1,0 +1,56 @@
+.button-basic, button {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-basic:hover, button:hover {
+  background-color: blue;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+a {
+  font-size: 20px;
+}
+
+header {
+  background-color: aqua;
+  padding: 10px;
+  margin: 10px;
+}
+header nav {
+  background-color: bisque;
+  padding: 10px;
+  margin: 10px;
+}
+header nav ul {
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+}
+header nav ul li {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background-color: red;
+  color: white;
+}
+
+button {
+  background-color: red;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
