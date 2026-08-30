@@ -232,3 +232,11 @@ let myNumber = new Number(2837)
 let randomNumber = parseInt(Math.random()*100)
 
 document.write('randomNumber: ' + randomNumber + "</br>")
+
+
+/* 
+... that takes a number from the use and compares it with a randomly
+generated number. If the numbers are the same, print "u won", to the
+console, otherwise, print "u lost"
+
+*/
