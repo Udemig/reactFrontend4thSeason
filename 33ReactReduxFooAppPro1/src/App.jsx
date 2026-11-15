@@ -15,7 +15,7 @@ function App() {
 
   useEffect(()=>{
     dispatch(getRestaurants())
-    dispatch(getCart)
+    dispatch(getCart())
   },[])
 
   return (

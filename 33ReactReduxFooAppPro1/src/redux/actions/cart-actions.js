@@ -31,7 +31,7 @@ export const addToCart = (product) => (dispatch) => {
 export const updateAmount = (productId, newAmount) => (dispatch) =>{
 
     api
-        .patch(`cart/${productId}`,{amount: newAmount})
+        .patch(`/cart/${productId}`,{amount: newAmount})
         .then((res)=> dispatch({type: AT.UPDATE_AMOUNT, payload: res.data}))
         .catch(()=> alert("not successfull"))
 }
@@ -39,7 +39,7 @@ export const updateAmount = (productId, newAmount) => (dispatch) =>{
 export const deleteFromBasket = (productId) => (dispatch) =>{
     
     api
-        .delete(`cart/${productId}`)
+        .delete(`/cart/${productId}`)
         .then(()=>dispatch({type:AT.DELETE_FROM_CART, payload: productId}))
         .catch(()=>alert("Not successfull"))
 }
