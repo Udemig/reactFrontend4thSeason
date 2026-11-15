@@ -36,7 +36,7 @@ const RestaurantDetail = () => {
             <div className="flex flex-wrap gap-3 text-sm font-semibold text-zinc-600">
                 <span className="pill bg-white/80">
                     <ArrowDown className='size-4 text-red-400' />
-                    min {restaurant.minPrice} $ffff
+                    min {restaurant.minPrice} $
                 </span>
                 <span className="pill bg-white/80">
                     <Clock className='size-4 text-red-400' /> {restaurant.estimatedDelivery} minutes

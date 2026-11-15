@@ -16,7 +16,7 @@ export const getRestaurants = () => (dispatch) => {
         })
         .catch((err) => {
 
-            console.log("API_ERROR: ", res.data);
+            console.log("API_ERROR: ", res.message);
             dispatch({ type: AT.REST_ERROR, payload: err.message })
         })
 
